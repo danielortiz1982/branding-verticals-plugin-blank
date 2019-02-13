@@ -20,7 +20,8 @@ class Branding_Verticals_Plugin{
         add_filter('single_template', 'template_single_post');
         add_action('add_meta_boxes', 'add_sample_meta');
         add_action( 'save_post', 'sample_meta_box_save' );
-        
+        add_action('wp_enqueue_scripts', array($this, 'enqueue_scripts'));
+
         register_activation_hook(__FILE__, array($this, 'activate'));
 
     }
@@ -45,6 +46,11 @@ class Branding_Verticals_Plugin{
         include(plugin_dir_path(__FILE__) . 'includes/custom_filters.php');
     }
     // end of custom_filter
+
+    public function enqueue_scripts(){
+        include(plugin_dir_path(__FILE__) . 'includes/enqueue_scripts.php');
+    }
+    // end of enqueue_scripts
 
     public function activate(){
         flush_rewrite_rules();
