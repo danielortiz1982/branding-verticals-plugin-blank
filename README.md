@@ -1,2 +1,2 @@
-# branding-verticals-plugin-blank
-BV WordPress blank plugin 
+#Branding Verticals WP plugin blank.. 
+
