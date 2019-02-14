@@ -75,6 +75,10 @@
 		</div>
 		<!--Sample  File Uploader-->
 
+		<div class="meta-wrapper">
+			<iframe src="<?php echo $this_file; ?>"></iframe>
+		</div>
+
 		<?php
 
 	}
