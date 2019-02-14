@@ -4,7 +4,7 @@
 
 		// Adds a meta box to one or more screens.
 		// Reference -> https://developer.wordpress.org/reference/functions/add_meta_box/
-		add_meta_box('sample', 'Sample Meta Box', 'display_sample_meta', 'bv_blank', 'normal', 'high');
+		add_meta_box('sample', 'Sample Meta Box', 'display_sample_meta', array('bv_blank'), 'normal', 'high');
 
 	}
 
