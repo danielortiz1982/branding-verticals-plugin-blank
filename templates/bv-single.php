@@ -13,7 +13,7 @@
 				<p>Textarea: <?php echo get_post_meta(get_the_ID(), 'sample_textarea', true); ?></p>
 				<?php $file = get_post_meta(get_the_ID(), 'sample_file_upload', true); ?>
 				<p>Click to view file:<br /><a href="<?php echo $file['url']; ?>"><?php echo $file['url']; ?></a></p>
-				<p>File Upload:<br /><iframe src="<?php echo $file['url']; ?>"><iframe></p>
+				<p>File Upload:<br /><iframe src="<?php echo $file['url']; ?>"></iframe></p>
 			</div>
 		</div>
 		<?php endwhile ?>
